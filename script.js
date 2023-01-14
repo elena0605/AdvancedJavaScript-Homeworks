@@ -54,3 +54,28 @@ let newArray = arrayOfNumbers(test);
 console.log(newArray)
 
 // Random color page 
+// let code = "";
+// function generateColor(){
+//     const hexArray = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 'A', 'B', 'C', 'D', 'E', 'F'];
+    
+//     for(let i=0; i<6; i++){
+//      code += hexArray[Math.floor(Math.random()*16)];
+//     }
+//     console.log(code)
+//     return `#${code}`
+//    }
+
+// window.addEventListener("load", () => {
+//     document.body.style.backgroundColor = generateColor();
+//     document.body.innerText = code;
+//   });
+
+// Title Generator 
+let inputColor =  document.getElementById('color').value;
+let inputFontSize = document.getElementById('fontSize').value;
+let inputText = document.getElementById('text').value;
+let button = document.getElementsByTagName('button');
+
+button.addEventListener('click', function (){
+    document.body.innerHTML = "<h1>new element</h1>";
+})
