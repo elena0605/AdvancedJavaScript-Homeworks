@@ -22,10 +22,10 @@ const table = document.getElementById("myTable");
 const printsPlanets = function (planets) {
 	const planetsArray = planets.results;
 
-	// remove the table body by replacing with headers
+	// replace the table body with the first row of headers
 	table.getElementsByTagName("tbody")[0].innerHTML = table.rows[0].innerHTML;
 
-	// add table data
+	// populate table with the data starting with the second row
 	let tableRowNumber = 1;
 	for (const planet of planetsArray) {
 		const row = table.insertRow(tableRowNumber);
