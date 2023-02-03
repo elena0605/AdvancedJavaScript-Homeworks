@@ -33,10 +33,16 @@ fetch(URL)
 			.map((person) => `${person.firstName} ${person.lastName}`);
 		console.log(malesFullNames);
 
-		const averageGradesFemale = data
-			.filter((person) => person.gender === "Female" && person.age > 24)
-			.map((person) => person.averageGrade);
-		console.log(averageGradesFemale);
+		const averageGradesFemale = data.filter(
+			(person) => person.gender === "Female" && person.age > 24
+		);
+		const average = averageGradesFemale.reduce(
+			(average, person) =>
+				average + person.averageGrade / averageGradesFemale.length,
+			0
+		);
+
+		console.log(average);
 
 		const maleStudents = data.filter(
 			(person) =>
