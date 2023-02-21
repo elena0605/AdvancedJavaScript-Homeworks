@@ -1,0 +1,158 @@
+/* CSS RESET */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+* {
+	margin: 0;
+}
+html,
+body {
+	height: 100%;
+}
+body {
+	margin: 20px 100px;
+	font-family: "Montserrat", sans-serif;
+}
+/* HEADER STYLING */
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 1px;
+}
+.nav-list {
+	display: flex;
+	justify-content: space-around;
+	list-style-type: none;
+	padding: 0;
+	gap: 30px;
+}
+
+.nav-links {
+	text-decoration: none;
+	color: hsl(219, 9%, 45%);
+}
+.cart-avatar-wrapper {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-basis: 15%;
+}
+.avatar-image {
+	width: 30px;
+	height: auto;
+}
+.cart-image {
+	width: 15px;
+	height: auto;
+}
+
+hr {
+	width: 98%;
+	margin-top: 20px;
+	border-top: hsl(213, 6%, 70%);
+}
+.hide {
+	display: none;
+}
+.show {
+	display: block;
+}
+
+.login {
+	padding: 0.35em 1.2em;
+	border: 0.1em solid #ffffff;
+	border-radius: 0.12em;
+	box-sizing: border-box;
+	text-decoration: none;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 300;
+	color: hsl(219, 9%, 45%);
+	text-align: center;
+	transition: all 0.2s;
+}
+.login:hover {
+	color: #000000;
+	background-color: #ffffff;
+	box-shadow: 0px 5px 40px -10px rgba(105, 102, 102, 0.57);
+}
+
+/* MAIN PAGE STYLING*/
+main {
+	color: hsl(216, 18%, 22%);
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	align-items: center;
+	height: 100%;
+}
+.product-image {
+	width: 200px;
+	height: auto;
+}
+h3 {
+	border-bottom: 2px solid hsl(216, 18%, 22%);
+	width: 45%;
+	margin-top: 10px;
+}
+
+/* CARDS STYLING */
+.card-wrapper {
+	margin-top: 100px;
+	display: flex;
+	flex-wrap: wrap;
+	column-gap: 60px;
+	row-gap: 60px;
+}
+.single-card-container {
+	display: flex;
+	width: 500px;
+	column-gap: 30px;
+	justify-content: center;
+	align-items: center;
+}
+.card-image {
+	width: 180px;
+	height: auto;
+}
+.card-description {
+	font-size: xx-small;
+	color: hsl(219, 9%, 45%);
+	margin-top: 20px;
+}
+.card-title {
+	font-size: medium;
+}
+.card-price {
+	margin-top: 15px;
+}
+/* skroz go prepishav stilov :)) */
+.card-button {
+	border-radius: 6px;
+	padding: 10px;
+	text-decoration: none;
+	transition: all 0.3s;
+	font-family: sans-serif;
+	border-bottom-color: rgb(0, 0, 0);
+	outline: 0;
+	display: block;
+	color: #cef5e7;
+	text-shadow: 1px 1px #1f272b;
+	border: 1px solid #1c252b;
+	background: -webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		color-stop(3%, #657179),
+		color-stop(4%, #294d65),
+		color-stop(100%, #08263a)
+	);
+	margin-top: 20px;
+}
+.card-button:hover {
+	color: #84ffa4;
+	letter-spacing: 1.3px;
+	box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+	transition: all 0.3s;
+}
